@@ -1,0 +1,19 @@
+{
+    "exclude":["node_modules"],
+    "include": ["./src/**/*.ts"],
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "noImplicitUseStrict": true,
+        "noImplicitAny": false,
+        "alwaysStrict": false,
+        "sourceMap": true,
+        "allowJs": true,
+        "module": "CommonJS",
+        "target": "es5",
+        "baseUrl": ".",
+        "jsx": "react",
+        "paths":{
+        },
+    },
+}
