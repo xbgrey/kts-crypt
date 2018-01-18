@@ -1,3 +1,3 @@
-export default class A{
-    public a:number = 3;
-}
+import Crypt from "Crypt";
+
+const crypt:Crypt = new Crypt();

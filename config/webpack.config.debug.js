@@ -15,14 +15,12 @@ module.exports = ()=>{
         },
         
         devtool: 'source-map',
-        
-        devServer: {
-          contentBase: path.resolve('/bin'),
-          hot: true
-        },
 
         resolve: {
           extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+          alias: {
+            Crypt: path.resolve("./src/Crypt"),
+          },
         },
     
         module: {
@@ -43,8 +41,6 @@ module.exports = ()=>{
             hash: true,
             hot: true,
           }),
-          new webpack.NamedModulesPlugin(),
-          new webpack.HotModuleReplacementPlugin(),
         ]
       }
 }
